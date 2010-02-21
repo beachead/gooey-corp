@@ -71,11 +71,8 @@ h4 {
 
 
 #mastheadlogo {
--moz-background-clip:border;
--moz-background-inline-policy:continuous;
--moz-background-origin:padding;
-background:transparent url(../images/gooey_masthead.png)no-repeat;
-height:105px;
+	background: transparent url(../images/gooey_masthead.png)no-repeat;
+	height: 105px;
 }
 
 #nav {
@@ -109,6 +106,18 @@ height:105px;
 	border-bottom: 1px solid #CCDDEE;
 	border-right: 1px solid #CCDDEE;
 }
+
+#features {
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 1px solid #878787;
+	padding: 20px;
+	background-color: #ffffce;
+	width: 400px;
+	display: none;
+}
+
 
 .footer {
 	background: transparent url(../images/bg_footer.png) repeat-x scroll 0 0;
@@ -191,6 +200,20 @@ height:105px;
 /* resources */
 #resources .feature {
 	padding: 20px 30px 20px 29px;	
+}
+
+
+
+/* features */
+#features ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#features li {
+	margin: 0 0 5px 0;
+	padding: 0;
 }
 
 

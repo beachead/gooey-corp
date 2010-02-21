@@ -17,4 +17,13 @@ $(function(){
 		}
 	);
 
+	$('#a-features').click(
+		function() {
+			var t = $(this);
+			var pos = t.position();
+			$('#features').css({left: pos.left, top: pos.top + 20}).toggle();
+			return false;
+		}
+	);
+
 });
