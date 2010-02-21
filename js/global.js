@@ -17,6 +17,7 @@ $(function(){
 		}
 	);
 
+	// comment for the sake of testing commit
 	$('#a-features').click(
 		function() {
 			var t = $(this);
