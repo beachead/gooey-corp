@@ -71,11 +71,8 @@ h4 {
 
 
 #mastheadlogo {
--moz-background-clip:border;
--moz-background-inline-policy:continuous;
--moz-background-origin:padding;
-background:transparent url(../images/gooey_masthead.png)no-repeat;
-height:105px;
+	background: transparent url(../images/gooey_masthead.png)no-repeat;
+	height: 105px;
 }
 
 #nav {
@@ -109,6 +106,18 @@ height:105px;
 	border-bottom: 1px solid #CCDDEE;
 	border-right: 1px solid #CCDDEE;
 }
+
+#features {
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 1px solid #878787;
+	padding: 20px;
+	background-color: #ffffce;
+	width: 400px;
+	display: none;
+}
+
 
 .footer {
 	background: transparent url(../images/bg_footer.png) repeat-x scroll 0 0;
@@ -157,7 +166,7 @@ height:105px;
 #nav a {
 	text-decoration: none;
 	text-transform: uppercase;
-color: #FFFFFF;
+	color: #fff;
 	background: transparent url(../images/bg_nav_a.png) 100% 0 no-repeat ;
 	display: block;
 	float: left;
@@ -194,9 +203,54 @@ color: #FFFFFF;
 }
 
 
+
+/* features */
+#features ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#features li {
+	margin: 0 0 5px 0;
+	padding: 0;
+}
+
+
 /**************************************
 	(4) general purpose
 ***************************************/
+
+.button {
+	float: left;
+	color: white;
+	padding: 5px 15px;
+	background-color: #0c3;
+	border: 2px solid #04a32c;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+}
+
+.button a {
+	display: block;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	font-family: "Segoe UI";
+	font-size: 16px;
+	text-decoration: none;
+	text-shadow: #04a32c 2px 0;
+}
+
+.button a:focus{
+	outline: none;
+}
+
+
+.button .expanded-content {
+	display: none;
+}
+
 
 .u-bottom {
 	border-bottom: 1px solid #CCDDEE;
