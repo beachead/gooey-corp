@@ -9,9 +9,12 @@ $(function(){
 			var sOffset = jButton.attr('offsetWidth');
 			jButton.prepend(sPre).append(sPost).css('width', sOffset);
 			jButton.find('.expanded-content').html(sExpandedContent);
-			jButton.mouseover(
+			jButton.hover(
 				function() {
-					$(this).find('.expanded-content').slideToggle('slow');
+					$(this).find('.expanded-content').slideDown('slow');
+				},
+				function() {
+					$(this).find('.expanded-content').slideUp('slow');
 				}
 			);
 		}
