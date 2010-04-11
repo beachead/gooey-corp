@@ -1,0 +1,69 @@
+#main {
+	width: 843px;
+	min-height: 670px;
+	margin: 0 auto;
+	padding: 0 63px 0 98px;
+	background: transparent url(../images/bg_main.jpg) 0 0 no-repeat;
+	position: relative;
+}
+
+#content {
+	padding: 40px 0 0 40px;
+	height: 390px;
+	width: 100%;
+}
+
+#features {
+	background: transparent url(../images/home/bg_features.png) 0 0 no-repeat;
+	width: 840px;
+	height: 202px;
+	padding: 5px 0 0 20px;
+	margin-left: -30px;
+	overflow: hidden;
+}
+
+
+/* content */
+#content p {
+	margin-bottom: 20px;
+}
+
+#content #feature-tour {
+	margin-left: 54px;
+}
+
+#content #handy {
+	margin-left: 97px;
+}
+
+#content #handy p {
+	margin-bottom: 8px;
+}
+
+/* #features */
+
+#features div.column {
+	float: left;
+	padding: 20px;
+	position: relative;
+	height: 130px;
+	font-size: 1.2em;
+	line-height: 1.2em;
+}
+
+#features div.column .learn-more {
+	position: absolute;
+	bottom: 5px;
+	right: 15px;
+}
+
+
+#features #col-speed { width: 218px; }
+#features #col-speed p { padding-left: 29px; }
+
+#features #col-features { width: 238px; }
+#features #col-features p { padding-left: 36px; }
+
+#features #col-sites { width: 240px; }
+#features #col-sites p { padding-left: 42px; }
+

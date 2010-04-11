@@ -1,0 +1,140 @@
+/*
+	(1) html elements:
+	(2) layout components
+	(3) formatting: layout components
+	(4) general purpose
+	(5) hacks
+		made in washington */
+
+/************************************************
+	(1) html elements
+*************************************************/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	border: none;
+}
+
+body {
+	background: #000 url(../images/bg_body.jpg) 0 0 repeat-x;
+	font-size: 80%;
+	font-family: "Segoe UI", arial, helvetica, sans-serif;
+}
+
+
+/************************************************
+	(2) layout components
+*************************************************/
+
+#main {
+	position: relative;
+}
+
+#login {
+	position: absolute;
+	top: 0;
+	right: 108px;
+}
+
+#logo {
+	float: left;
+	padding-top: 17px;
+}
+
+#nav {
+	float: right;
+	padding: 45px 64px 0 0;
+	position: relative;
+}
+
+#content {}
+
+#footer {
+	color: #a9a9a9;
+	padding-bottom: 15px;
+}
+
+
+/************************************************
+	(3) formatting: layout components
+*************************************************/
+
+/* nav */
+#nav li#signup {
+	background: none;
+	padding-right: 0;
+}
+
+#nav li#signup a {
+	color: #4395f1;
+}
+
+#nav li {
+	background: transparent url(../images/sep_nav_item.gif) 100% 60% no-repeat;
+	padding: 0 13px 0 10px;
+}
+
+#nav li a {
+	color: #0c2847;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#nav li.active a,
+#nav li a:hover {
+	color: #4395f1;
+}
+
+
+/* footer */
+#footer ul {
+	overflow: auto;
+	width: 320px;
+	margin: 0 auto 10px auto;
+	text-align: center;
+}
+
+#footer p {
+	text-align: center;
+}
+
+#footer li {
+	background: transparent url(../images/sep_nav_item.gif) 100% 50% no-repeat;
+	padding: 0 13px 0 10px;
+}
+
+#footer li.last {
+	background: none;
+	padding-right: 0;
+}
+
+#footer a {
+	text-decoration: none;
+	color: #a9a9a9;
+}
+
+#footer a:hover {
+	text-decoration: underline;
+}
+
+
+/************************************************
+	(4) general purpose
+*************************************************/
+
+ul.adjacent {
+	list-style: none;
+}
+
+ul.adjacent li {
+	float: left;
+}
+
+
+/************************************************
+	(5) hacks
+*************************************************/
+
