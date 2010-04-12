@@ -11,6 +11,7 @@
 	padding: 40px 0 0 40px;
 	height: 390px;
 	width: 100%;
+	clear: both;
 }
 
 #features {
@@ -67,3 +68,10 @@
 #features #col-sites { width: 240px; }
 #features #col-sites p { padding-left: 42px; }
 
+/************************************************
+	(5) hacks
+*************************************************/
+
+*:first-child+html #content {
+	clear: none !important;
+}

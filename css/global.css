@@ -41,6 +41,7 @@ body {
 
 #logo {
 	float: left;
+	clear: both;
 	padding-top: 17px;
 }
 
