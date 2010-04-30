@@ -1,3 +1,8 @@
+h2 {
+	margin-bottom: 0;
+}
+
+
 #main {
 	width: 843px;
 	min-height: 670px;
@@ -7,11 +12,36 @@
 	position: relative;
 }
 
+#masthead {
+	background: none;
+	width: 826px;
+}
+
+
+#logo {
+	padding-top: 17px;
+	padding-left: 0;
+	margin-left: 0;
+}
+
+#login {
+	right: 108px;
+}
+
+#nav {
+	padding-right: 0px;
+	margin-right: 57px;
+}
+
 #content {
-	padding: 40px 0 0 40px;
 	height: 390px;
-	width: 100%;
 	clear: both;
+
+	background: none !important;
+	width: 100% !important;
+	margin: auto !important;
+	min-height: 0px !important;
+	padding: 0 0 0 40px !important;
 }
 
 #features {
@@ -48,8 +78,8 @@
 	padding: 20px;
 	position: relative;
 	height: 130px;
-	font-size: 1.2em;
-	line-height: 1.2em;
+	font-size: 1.05em;
+	line-height: 1.05em;
 }
 
 #features div.column .learn-more {

@@ -1,33 +1,45 @@
 $(function(){
-
-	$('.button').each(
-		function() {
-			var jButton = $(this);
-			var sExpandedContent = jButton.find('a').attr('title');
-			var sPre = '<div class="tl"/><div class="tr"/>';
-			var sPost = '<div class="expanded-content"></div><div class="bl"/><div class="br"/>';
-			var sOffset = jButton.attr('offsetWidth');
-			jButton.prepend(sPre).append(sPost).css('width', sOffset);
-			jButton.find('.expanded-content').html(sExpandedContent);
-			jButton.hover(
-				function() {
-					$(this).find('.expanded-content').slideDown('slow');
-				},
-				function() {
-					$(this).find('.expanded-content').slideUp('slow');
-				}
-			);
-		}
-	);
-
-	// comment for the sake of testing commit
-	$('#a-features').click(
-		function() {
-			var t = $(this);
-			var pos = t.position();
-			$('#features').css({left: pos.left, top: pos.top + 20}).toggle();
-			return false;
-		}
-	);
-
+	$('img.rollover, .rollover img').rollover();
+	$('.clear-on-focus').clearOnFocus();
 });
+
+jQuery.fn.rollover = function() {
+	return this.each(function(){
+		var jThis = $(this);
+		if( jThis.hasClass('active') ) return false;
+		var sSrc = jThis.attr('src');
+		var sExt = sSrc.match(/\.[a-z]{3,4}$/);
+		var sNewSrc = sSrc.replace(sExt, '_on' + sExt);
+		var newImg = new Image();
+		newImg.src = sNewSrc;
+		jThis.hover(
+			function(){
+				jThis.attr('src', sNewSrc);
+			},
+			function(){
+				jThis.attr('src', sSrc);
+			}
+		);
+	});
+};
+
+jQuery.fn.clearOnFocus = function() {
+	return this.each(function(){
+		var jThis = $(this);
+		jThis.focus(
+			function(){
+				jThis.addClass('focused');
+				if( jThis.val() == jThis.attr('defaultValue') ) {
+					jThis.val("");
+				}
+			}
+		).blur(
+			function(){
+				if( jThis.val() == "" ) {
+					jThis.removeClass('focused');
+					jThis.val( jThis.attr('defaultValue') );
+				}
+			}
+		)
+	});
+};
