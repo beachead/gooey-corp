@@ -60,9 +60,10 @@ body {
 	background: #fff url(../images/bg_content_bottom.png) bottom left repeat-x;
 	width: 726px;
 	margin: 0 auto;
-	min-height: 830px;
-	padding: 15px 63px 40px 68px;
+	min-height: 800px;
+	padding: 15px 63px 60px 68px;
 	position: relative;
+	clear: both;
 }
 
 #login {

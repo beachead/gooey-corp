@@ -6,20 +6,21 @@ $(function(){
 jQuery.fn.rollover = function() {
 	return this.each(function(){
 		var jThis = $(this);
-		if( jThis.hasClass('active') ) return false;
-		var sSrc = jThis.attr('src');
-		var sExt = sSrc.match(/\.[a-z]{3,4}$/);
-		var sNewSrc = sSrc.replace(sExt, '_on' + sExt);
-		var newImg = new Image();
-		newImg.src = sNewSrc;
-		jThis.hover(
-			function(){
-				jThis.attr('src', sNewSrc);
-			},
-			function(){
-				jThis.attr('src', sSrc);
-			}
-		);
+		if( !jThis.hasClass('active') ) {
+			var sSrc = jThis.attr('src');
+			var sExt = sSrc.match(/\.[a-z]{3,4}$/);
+			var sNewSrc = sSrc.replace(sExt, '_on' + sExt);
+			var newImg = new Image();
+			newImg.src = sNewSrc;
+			jThis.hover(
+				function(){
+					jThis.attr('src', sNewSrc);
+				},
+				function(){
+					jThis.attr('src', sSrc);
+				}
+			);
+		}
 	});
 };
 
