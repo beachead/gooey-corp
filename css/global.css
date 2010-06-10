@@ -223,13 +223,16 @@ table.form td.label {
 	text-align: right;
 }
 
-input.std,
-table.form input[type=text],
-table.form input[type=password] {
-	border: 1px solid #000;
-	height: 16px;
-	padding: 2px 5px;
+input.std, 
+table.form input[type="password"], table.form input[type="text"] {
+-moz-border-radius-bottomleft:5px;
+-moz-border-radius-bottomright:5px;
+-moz-border-radius-topleft:5px;
+-moz-border-radius-topright:5px;
+height:17px;
+padding:5px;
 }
+
 
 
 .clear-on-focus {
