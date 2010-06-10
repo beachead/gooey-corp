@@ -226,9 +226,7 @@ table.form td.label {
 input.std,
 table.form input[type=text],
 table.form input[type=password] {
-	/*
-border: 1px solid #000;
-*/
+	border: 1px solid #000;
 	height: 16px;
 	padding: 2px 5px;
 }
@@ -241,32 +239,6 @@ border: 1px solid #000;
 .clear-on-focus.focused {
 	color: #000;
 }
-
-
-a.button {
-	padding: 6px 20px;
-	border:2px solid #fff;
-	color: #fff;
-	box-shadow: 3px 3px 3px #5c7ea5;
-	 -webkit-box-shadow: 3px 3px 3px #5c7ea5;
- 	 -moz-box-shadow: 3px 3px 3px #5c7ea5;
-	border-radius: 36px;
-	 -webkit-border-radius: 36px;
-	 -moz-border-radius: 36px;
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4294F1), to(#236ABA), color-stop(.6,#4294F1));
-	background: -moz-linear-gradient(19% 75% 90deg,#4294F1, #236ABA, #4294F1 100%);
-	font-weight: bold;
-	text-decoration: none;
-	text-shadow: 1px 1px 1px #204772;
-	text-transform: uppercase;
-	font-size: .75em;
-}
-
-a.button:hover {
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4294F1), to(#204772), color-stop(.6,#4294F1));
-	background: -moz-linear-gradient(19% 75% 90deg,#4294F1, #204772, #4294F1 100%);
-}
-
 
 /* UTILITIES */
 

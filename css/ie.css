@@ -1,9 +1,0 @@
-a.button {
-	padding: 6px 25px 6px 10px;
-	background: #4294F1 url(../images/icon_arrow.png) 97% 52% no-repeat;
-}
-
-a.button:hover {
-	background-image: url(../images/icon_arrow_light.png);
-}
-
